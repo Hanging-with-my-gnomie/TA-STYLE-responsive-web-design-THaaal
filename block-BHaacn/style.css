@@ -1,0 +1,300 @@
+:root{
+    --primary:rgb(34,41,70);
+    --accent:rgb(55,182,103);
+    --textdark:rgb(2,5,17);
+    --textlight:rgb(149,149,152);
+    --bg:rgb(233,236,252);
+}
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* general */
+html{
+    font-size: 16px;
+}
+body{
+    font-family: 'Nunito', sans-serif;
+    color: var(--textlight);
+    font-size: 1.2rem;
+    line-height: 1.5;
+}
+h1, h2, h3, h4, h5, h6{
+    font-family: 'Nunito', sans-serif;
+}
+a{
+    text-decoration: none;
+}
+ul,ol{
+    text-decoration: none;
+}
+/* container */
+.container{
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+/* padding */
+.padding{
+    padding: 5rem 0;
+}
+.padding1{
+    padding: 8rem 0;
+}
+.paddings{
+    padding: 2rem 0;
+}
+/* flex */
+.flex{
+    display: flex;
+    justify-content: space-between;
+}
+
+.justify-center{
+    justify-content: center;
+}
+.justify-end{
+    justify-content: flex-end;
+}
+.item-center{
+    align-items: center;
+}
+.item-start{
+    align-items: start;
+}
+.wrap{
+    flex-wrap: wrap;
+}
+
+.width-full{
+    width: 100%;
+}
+/* coumns */
+.flex-15{
+    flex: 0 1 15%;
+}
+.flex-20{
+    flex: 0 1 20%;
+}
+.flex-25{
+    flex: 0 1 25%;
+}
+.flex-30{
+    flex: 0 1 30%;
+}
+.flex-48{
+    flex: 0 1 48%;
+}
+/* center */
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* navbar */
+.navbar{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
+.brand{
+    color: #ffffff;
+    font-size: 2rem;
+    font-weight: 600;
+}
+.menu-item a{
+    margin-right: 2.5rem;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 1.3rem;
+}
+.btn{
+    background-color: rgb(194, 8, 8);
+    width: 120px;
+    outline: 0;
+    border: 0;
+    color: #ffffff;
+    font-size: 1.2rem;
+    padding: 10px 2px;
+    border-radius: 3px;
+}
+/* overlay */
+.overlay{
+    position: relative;
+    background: linear-gradient(rgba(65,50,181,0.8),rgba(65,50,181,0.8)), url(assets/banner.png) no-repeat;
+    background-position: center;
+    background-size: cover;
+    z-index: -1;
+    /* height: 100vh; */
+    width: 100%;
+    
+}
+.overlay-heading{
+    color: #ffffff;
+    font-size: 2.5rem;
+    font-weight: 700;
+    letter-spacing: 0.8px;
+}
+strong{
+    color: crimson;
+}
+.overlay-para{
+    margin-top: 24px;
+    color: #ffffff;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+.btn-primary{
+    width: 140px;
+    margin-top: 44px;
+    
+}
+/* aboout section */
+.About h2{
+    font-size: 2.5rem;
+    color: black;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.About p{
+    font-size: 1.2rem;
+    margin-top: 14px;
+    color: #5a5959;
+    font-weight: 500;
+}
+/* joining section */
+.joining{
+    background-color: #dfecff;
+}
+.sec-heading{
+    text-align: center;
+    font-size: 4rem;
+    color: black;
+    font-weight: 800;
+    letter-spacing: 0;
+}
+.border{
+    border: 2px solid crimson;
+    border-style: dashed;
+}
+/* Topic */
+.topic{
+    background-color: #dfecff;
+}
+.small{
+    display:block;
+    padding: 1rem 0 0 6rem;
+    color: black;
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+.strong{
+    display: block;
+    padding: 1rem 0 0 5rem;
+    font-size: 1.5rem;
+    color: black;
+    font-weight: 600;
+}
+.active{
+    background-color: crimson;
+    width: 100%;
+    padding: 24px 32px;
+    border-radius: 4px;
+    
+}
+/* video */
+.video-control{
+    position: relative;
+    background:url(assets/banner.png) no-repeat;
+    background-position: center;
+    background-size: cover;
+    z-index: -1;
+    height: 100vh;  
+    width: 100%;
+    border-radius: 8px;
+    
+}
+.bi-play-fill{
+    position: absolute;
+    top: 38%;
+    left: 47%;
+    text-align: center;
+    background-color: #ffffff;
+    color: crimson;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    font-size: 5rem;
+}
+/* news section */
+.news{
+    background-color: #dfecff;
+    
+}
+.news-head{
+     font-size: 1.2rem;
+     color: black;
+     font-weight: 800;
+}
+.news-para{
+    color: #5a5959;
+    font-size: 1.1rem;
+    font-weight: 600;
+    line-height: 1.3;
+}
+.underline{
+   color: black;
+   font-weight: 600;
+   text-decoration: underline;
+}
+.underline-active{
+    color: red;
+}
